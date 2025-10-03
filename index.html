@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anirudh - Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <script defer src="Javafiles.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Anirudh</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" alt="Anirudh" class="profile-image">
+            </div>
+            <h1>Hi, I'm <span class="gradient-text">Anirudh</span></h1>
+            <p>Full-Stack Web Developer crafting beautiful, functional digital experiences</p>
+            <a href="#contact" class="cta-button">Let's Work Together</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate web developer with 5+ years of experience building modern, responsive websites and applications. I specialize in creating seamless user experiences that blend aesthetic design with powerful functionality.</p>
+                <p>My approach combines clean code, cutting-edge technologies, and a deep understanding of user needs to deliver solutions that not only look great but perform exceptionally.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=500&fit=crop" alt="Workspace">
+            </div>
+        </div>
+
+        <!-- Education Timeline in About Section -->
+        <div style="margin-top: 4rem;">
+            <h3 style="font-size: 2rem; text-align: center; margin-bottom: 2rem; color: var(--white);">Education</h3>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-dot"></div>
+                    <div class="education-content">
+                        <span class="education-year">2018 - 2022</span>
+                        <h3>Bachelor of Technology</h3>
+                        <h4>Computer Science & Engineering</h4>
+                        <p>University Name, Location</p>
+                        <p>Graduated with First Class Honors. Specialized in Web Development, Data Structures, and Software Engineering.</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-dot"></div>
+                    <div class="education-content">
+                        <span class="education-year">2016 - 2018</span>
+                        <h3>Higher Secondary Education</h3>
+                        <h4>Science Stream</h4>
+                        <p>School Name, Location</p>
+                        <p>Completed with 95% in Mathematics, Physics, and Computer Science.</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-dot"></div>
+                    <div class="education-content">
+                        <span class="education-year">2023</span>
+                        <h3>Full Stack Development</h3>
+                        <h4>Professional Certification</h4>
+                        <p>Online Platform / Bootcamp</p>
+                        <p>Completed intensive program covering MERN stack, advanced JavaScript, and modern web technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>Frontend Development</h3>
+                <p>React, Vue.js, HTML5, CSS3, JavaScript, TypeScript, Tailwind CSS</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚙️</div>
+                <h3>Backend Development</h3>
+                <p>Node.js, Python, Express, Django, REST APIs, GraphQL</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">💾</div>
+                <h3>Database & Cloud</h3>
+                <p>MongoDB, PostgreSQL, MySQL, AWS, Firebase, Docker</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🚀</div>
+                <h3>DevOps & Tools</h3>
+                <p>Git, CI/CD, Webpack, Testing, Agile, Performance Optimization</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-slider">
+            <div class="projects-track" id="projectsTrack">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn" id="prevBtn">←</button>
+            <button class="slider-btn" id="nextBtn">→</button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Anirudh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
